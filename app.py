@@ -347,5 +347,4 @@ if st.session_state.generation_history:
 
 # Footer
 st.markdown("---")
-st.markdown("**Developed by Sneha Pandey**")
-st.markdown("For issues, ensure OneDrive sync is paused and run Streamlit as Administrator.")
+st.markdown("**Version 1.0 | Built by Sneha Pandey**")
