@@ -5,3 +5,4 @@ scikit-learn
 trimesh
 sentence-transformers
 torch
+plotly

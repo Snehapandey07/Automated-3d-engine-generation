@@ -67,7 +67,7 @@ def parse_description(description):
     
     return params
 
-# Define 50 parameter combinations (matching existing STL files)
+#  50 parameter combinations matching existing STL files
 descriptions = [
     # First 6 (original)
     "long thick camshaft with big cams",
@@ -101,7 +101,6 @@ descriptions = [
     "short thick camshaft with small cams wide journals",
     "long camshaft with small cams wide journals",
     "short camshaft with big cams narrow journals",
-    # Next 20 (second batch, adjusted to 50 total)
     "long thin camshaft with big cams narrow journals",
     "short thick camshaft with small cams wide journals",
     "long camshaft with small cams narrow journals",
@@ -124,7 +123,6 @@ descriptions = [
     "short camshaft with thin small cams"
 ]
 
-# Initialize metadata list
 metadata_list = []
 
 # Generate metadata for all 50 camshafts

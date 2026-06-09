@@ -12,15 +12,7 @@ import logging
 import math
 import time
 
-# Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-# Set paths
-# BASE_DIR = r"C:\Users\Sneha Pandey\OneDrive\Desktop\Automated 3d Model generation\Dataset\create dataset python"
-# MODEL_DIR = os.path.join(BASE_DIR, "dataset", "models")
-# METADATA_FILE = os.path.join(BASE_DIR, "dataset", "metadata.csv")
-# OUTPUT_DIR = os.path.join(BASE_DIR, "dataset", "outputs")
-# os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -34,11 +26,9 @@ print("MODEL_DIR =", MODEL_DIR)
 print("METADATA_FILE =", METADATA_FILE)
 print("OUTPUT_DIR =", OUTPUT_DIR)
 
-# Device configuration
 device = torch.device("cpu")
 logging.info(f"Using device: {device}")
-
-# Parametric generation functions
+\
 def generate_connecting_rod(params):
     length = params.get("length", 150.0)
     width = params.get("width", 20.0)
@@ -57,7 +47,7 @@ def generate_connecting_rod(params):
     ]
     body_mesh = trimesh.Trimesh(vertices=body_vertices, faces=body_faces)
 
-    # Add bearing holes (cylinders at ends)
+    # Add bearing holes 
     segments = 32
     bearing_vertices = []
     bearing_faces = []
@@ -121,7 +111,6 @@ def generate_camshaft(params):
 
     return trimesh.Trimesh(vertices=vertices, faces=faces)
 
-# Other component generators (simplified for brevity)
 def generate_crankshaft(params):
     length = params.get("length", 600.0)
     diameter = params.get("diameter", 30.0)
