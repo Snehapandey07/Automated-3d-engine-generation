@@ -32,7 +32,7 @@ Python, PyTorch, Hugging Face Transformers, Streamlit, Trimesh, Plotly, NumPy, P
 app.py              
 model.py            
 src/                
-Data/               T
+Data/               
 requirements.txt    
 ```
 
