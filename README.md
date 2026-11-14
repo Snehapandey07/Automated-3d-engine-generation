@@ -29,11 +29,11 @@ Python, PyTorch, Hugging Face Transformers, Streamlit, Trimesh, Plotly, NumPy, P
 ## Project structure
 
 ```
-app.py              TODO: confirm – Streamlit app entry point
-model.py            TODO: describe what this file does
-src/                TODO: describe the modules inside
-Data/               TODO: describe the data (what the files are, how they are used)
-requirements.txt    Python dependencies
+app.py              
+model.py            
+src/                
+Data/               T
+requirements.txt    
 ```
 
 ## Run locally
@@ -44,6 +44,6 @@ cd Automated-3d-engine-generation
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run app.py            # TODO: confirm this is the correct entry point
+streamlit run app.py            
 ```
 
